@@ -16,6 +16,6 @@ def PrimeList(N):
         if is_prime:
             primes.append(str(num))
     return ' '.join(primes)
-if __name__ == "__main__"
+if __name__ == "__main__":
 N = input()
 PrimeList()
