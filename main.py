@@ -1,8 +1,8 @@
-def PrimeList(N):
+def Primelist(N):
     """
     返回小于 N 的所有质数，以空格分隔
-    参数:    N - 正整数
-    返回:    str - 包含所有小于 N 的质数的字符串，空格分隔
+    参数：N - 正整数
+    返回：str - 包含所有小于 N 的质数的字符串，空格分隔
     """
     if N <= 2:
         return ""
@@ -16,6 +16,8 @@ def PrimeList(N):
         if is_prime:
             primes.append(str(num))
     return ' '.join(primes)
+
 if __name__ == "__main__":
-    N = input()
-    PrimeList()
+    N = int(input().strip())  # 添加int转换和strip处理
+    result = Primelist(N)
+    print(result)
