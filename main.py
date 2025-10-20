@@ -18,6 +18,8 @@ def PrimeList(N):
     return ' '.join(primes)
 
 if __name__ == "__main__":
+    x = PrimeList(10000)
+    print(x)
     N = int(input().strip())  # 添加int转换和strip处理
     result = PrimeList(N)
     print(result)
