@@ -1,4 +1,4 @@
-def PrimeList(N):
+def primeList(N):
     """
     返回小于 N 的所有质数，以空格分隔
     参数：N - 正整数
@@ -18,8 +18,8 @@ def PrimeList(N):
     return ' '.join(primes)
 
 if __name__ == "__main__":
-    x = PrimeList(10000)
+    x = primeList(10000)
     print(x)
     N = int(input().strip())  # 添加int转换和strip处理
-    result = PrimeList(N)
+    result = primeList(N)
     print(result)
