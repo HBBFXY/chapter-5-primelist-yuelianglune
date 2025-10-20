@@ -17,5 +17,5 @@ def PrimeList(N):
             primes.append(str(num))
     return ' '.join(primes)
 if __name__ == "__main__":
-N = input()
-PrimeList()
+    N = input()
+    PrimeList()
